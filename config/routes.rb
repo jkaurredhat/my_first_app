@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  # 'Router' is the element which pass your request to right controller
+  # Use: 'rake routes' to view all routes
+
+  get 'greeter/hello'
+  get 'greeter/helo' => "greeter#hello"
+
+  get 'greeter/goodbye'
+  get 'greeter/bye' => "greeter#goodbye"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
