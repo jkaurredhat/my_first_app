@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'courses/index'
+
   # 'Router' is the element which pass your request to right controller
   # Use: 'rake routes' to view all routes
 
